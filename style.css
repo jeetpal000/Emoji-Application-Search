@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("./assets/photo-1730943803391-cd1cd4f47c50.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    /* position: fixed; */
+    overflow: hidden;
+}
+.header{
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(77, 77, 77, 0.044);
+    width: 100%;
+    border-radius: 0px 0px 50px 50px;
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+}
+h1{
+    text-align: center;
+    font-weight: 900;
+    font-size: 3rem;
+    span{
+        color: rgb(40, 255, 130);
+    }
+}
+.search_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    #input{
+        padding: 5px;
+        font-size: 20px;
+        border-radius: 10px 0px 0px 10px;
+        outline: none;
+        border: none;
+        color: rgb(87, 87, 87);
+        width: 170px;
+        font-weight: bold;
+    } 
+    #button{
+        padding: 5px;
+        font-size: 20px;
+        border-radius: 0px 10px 10px 0px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        background-color: rgb(43, 241, 109);
+        color: white;
+        font-weight: bold;
+    }
+    #button:hover{
+        background-color: rgb(6, 201, 71);
+    }
+    #button:active{
+        color: rgb(162, 158, 158);        
+    }
+
+}
+#recent{
+    margin: 10px auto;
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+    align-items: center;
+
+    
+}
+.quick_search_changeBg{
+    background-color: rgb(0, 162, 255);
+}
+#recent li {
+    list-style: none;
+    padding: 10px;
+    background: rgba(192, 192, 192, 0.718);
+    background-size: 300% 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+ 
+    box-shadow: 0px 3px 5px 1px white;
+}
+#recent li:first-child{
+    background-color: rgb(0, 162, 255);
+}
+
+#recent li:hover {
+    background: rgba(149, 149, 149, 0.718);
+    transform: translateY(-2px) scale(1.1);
+
+}
+#recent li:active{
+    transform: scale(.9);
+}
+
+
+
+#emoji_container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding-top: 250px;
+    flex-wrap: wrap;
+    scroll-behavior: smooth;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+}
+.emoji_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    overflow: hidden;
+    background: #ffffff20;
+    margin: 10px auto;
+    backdrop-filter: blur(3px);
+    border-radius: 12px;
+    z-index: -1;
+    cursor: pointer;
+}
+.emoji_name{
+   
+    font-weight:100;
+    font-size: 10px;
+}
+.emojee{
+    font-size: 2rem;
+    animation: jump 2s infinite linear;
+    transition: all 0.4s ease;
+}
+
+@keyframes jump{
+    0%{
+        transform: scale(.9) translate(-2px );
+    }
+    100%{
+        transform: scale(1.2) translate(2px);
+    }
+}
