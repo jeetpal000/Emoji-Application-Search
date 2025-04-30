@@ -106,7 +106,8 @@ h1{
 
 
 #emoji_container{
-    width: 100%;
+    width: 70%;
+    margin: 0 auto;
     height: 100vh;
     display: flex;
     padding-top: 250px;
@@ -116,19 +117,19 @@ h1{
     justify-content: space-evenly;
     overflow: scroll;
     overflow-x: hidden;
-    scrollbar-width: thin;
+    scrollbar-width: none;
 }
 .emoji_div{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     text-align: center;
     overflow: hidden;
     background: #ffffff20;
-    margin: 10px auto;
+    margin: 10px 10px;
     backdrop-filter: blur(3px);
     border-radius: 12px;
     z-index: -1;
